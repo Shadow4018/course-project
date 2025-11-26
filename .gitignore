@@ -1,0 +1,47 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+Log/
+
+# Visual Studio cache files
+.vs/
+*.csproj.vspscc
+*.vssscc
+.DS_Store
+
+# NuGet packages
+*.nupkg
+*.nuget.props
+*.nuget.targets
+packages/
+
+# Secrets and local settings
+secrets.json
+appsettings.Development.json
+
+# Other
+*.Cache
+ClientBin/
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+node_modules/

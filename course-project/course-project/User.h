@@ -18,7 +18,7 @@ class UserManager;
  * - покупка квитків;
  * - перегляд історії посадкових талонів.
  *
- * Використовується у поєднанні з класами @ref FlightManager та @ref UserManager.
+ * Використовується разом з класами @ref FlightManager та @ref UserManager.
  */
 class User
 {
@@ -32,17 +32,17 @@ public:
 
     /**
      * @brief Конструктор з логіном і паролем.
-     * @param _username Ім’я користувача (логін).
+     * @param _username Логін користувача.
      * @param _password Пароль користувача.
-     * @details Роль за замовчуванням — "user".
+     * @details Роль за замовчуванням — user.
      */
     User(const string& _username, const string& _password);
 
     /**
      * @brief Конструктор із вказаною роллю.
-     * @param _username Ім’я користувача.
+     * @param _username Логін користувача.
      * @param _password Пароль користувача.
-     * @param _role Роль користувача ("admin" або "user").
+     * @param _role Роль користувача.
      */
     User(const string& _username, const string& _password, const string& _role);
 
@@ -101,10 +101,10 @@ public:
     void changePassword();
 
     /**
-     * @brief Змінює ім’я користувача.
+     * @brief Змінює логін користувача.
      * @details
-     * - Перевіряє, чи не порожнє введене ім’я.
-     * - Перевіряє, чи немає користувача з таким логіном у @ref UserManager.
+     * - Перевіряє чи є введений логін порожнім.
+     * - Перевіряє чи немає користувача з таким логіном у @ref UserManager.
      * - Оновлює логін у поточному об’єкті.
      * @param userManager Менеджер користувачів, необхідний для перевірки унікальності імені.
      */
@@ -112,7 +112,7 @@ public:
 
     /**
      * @brief Відображає інформацію профілю користувача.
-     * @details Виводить логін і роль у консоль у форматованому вигляді.
+     * @details Виводить логін і роль у консоль.
      */
     void showProfile() const;
 
